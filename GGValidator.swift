@@ -1,6 +1,6 @@
 //
 //  GGValidator.swift
-//  PLCodeTest
+//
 //
 //  Created by GaoYuan on 10/8/16.
 //  Copyright © 2016 YuanGao. All rights reserved.
