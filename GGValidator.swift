@@ -29,7 +29,7 @@ extension GGValidator {
         flag = block(e)
       }
       
-      return flag
+      return !flag
     }
   }
   
@@ -42,7 +42,7 @@ extension GGValidator {
         flag = e == checker
       }
       
-      return flag
+      return !flag
     }
   }
 }
