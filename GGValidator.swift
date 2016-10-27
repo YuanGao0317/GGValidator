@@ -20,29 +20,31 @@ extension GGValidator {
     }
   }
   
-  func isValidWithArray(_ a: Set<String>, _ block: (String) -> Bool) -> Bool {
+  func isValidWithArray(_ a: Set<String>, _ block: (String) -> Bool) -> Bool   func isValidWithArray(_ a: Set<String>, _ block: (String) -> Bool) -> Bool {
     switch self {
     case .required:
-      var flag = true
       
       for e in a {
-        flag = block(e)
+        if block(e) {
+          return false
+        }
       }
       
-      return !flag
+      return true
     }
   }
   
-  func isValidGeneric<T: Equatable>(_ a: Set<T>, _ checker: T) -> Bool {
+  func isValidGeneric<T: Equatable>(_ a: Set<T>, checker: T) -> Bool {
     switch self {
     case .required:
-      var flag = true
       
       for e in a {
-        flag = e == checker
+        if e == checker {
+          return false
+        }
       }
       
-      return !flag
+      return true
     }
   }
 }
