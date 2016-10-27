@@ -37,4 +37,14 @@ init(...) throw {
       	throw GGValidationError.isEmpty
     }
 }
+
+
+// In the view
+do {
+  let model = try Model(...)
+} catch {
+	// Catch errors here
+}
 ```
+
+
