@@ -1,5 +1,5 @@
 //
-//  PLValidator.swift
+//  GGValidator.swift
 //  PLCodeTest
 //
 //  Created by GaoYuan on 10/8/16.
@@ -7,11 +7,11 @@
 //
 
 
-enum PLValidator {
+enum GGValidator {
   case required
 }
 
-extension PLValidator {
+extension GGValidator {
   func isValid(_ attrs: Set<String>) -> Bool {
     switch self {
     case .required:
@@ -45,8 +45,4 @@ extension PLValidator {
       return flag
     }
   }
-  
-  
-  
-
 }
