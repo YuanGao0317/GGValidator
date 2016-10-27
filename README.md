@@ -7,7 +7,7 @@ In this way, the initiallier can throw errors to the View or the Controller dire
 
 ## How to use it
 ```
-// We need to create errorable initiallizer
+// We need to create a errorable initiallizer
 init(...) throw {
 		// Normal way
     guard
